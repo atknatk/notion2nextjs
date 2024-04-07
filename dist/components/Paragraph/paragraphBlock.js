@@ -20,8 +20,6 @@ var notionBlock_1 = __importDefault(require("../Block/notionBlock"));
 var styled_1 = require("./styled");
 function ParagraphBlock(_a) {
     var block = _a.block;
-    console.log('ParagraphBlock', block);
-    console.log('ParagraphBlockChilderen', block.children);
     return ((0, jsx_runtime_1.jsxs)(styled_1.Container, { children: [(0, jsx_runtime_1.jsx)(richTexts_1.default, { richTexts: block.paragraph.rich_text }), block.children && ((0, jsx_runtime_1.jsx)("div", __assign({ className: "children" }, { children: block.children.map(function (child, idx) { return ((0, jsx_runtime_1.jsx)(notionBlock_1.default, { block: child }, idx)); }) })))] }));
 }
 exports.default = ParagraphBlock;
