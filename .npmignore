@@ -1,0 +1,9 @@
+.idea
+.github
+node_modules
+src
+tsconfig.json
+.eslintrc.json
+.gitignore
+.prettierrc
+yarn.lock
