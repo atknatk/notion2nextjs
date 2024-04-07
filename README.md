@@ -6,13 +6,13 @@
 </div>
 
 [![Static Badge](https://img.shields.io/badge/%40notionhq%2Fclient-2.2.13-green)](https://www.npmjs.com/package/@notionhq/client)
-[![Static Badge](https://img.shields.io/badge/npm-1.0.0-red?logo=npm)](https://www.npmjs.com/package/@hibernationit/notion2component)
+[![Static Badge](https://img.shields.io/badge/npm-1.0.0-red?logo=npm)](https://www.npmjs.com/package/notion2nextjs)
 
 # Get Started
 
 ## Installation
 ```shell
-npm install @hibernationit/notion2component
+npm install notion2nextjs
 ```
 
 ## Advice
@@ -25,7 +25,7 @@ However, because the Notion Template component is a client side rendering (CSR),
 [Create a client object by referencing the @notionhq/client document](https://github.com/makenotion/notion-sdk-js/blob/main/README.md#usage) and create an n2c object using that object.
 
 ```js
-import { Notion2Component } from '@hibernationit/notion2component' 
+import { Notion2Component } from 'notion2nextjs' 
 
 const n2c = new Notion2Component({
   client: notionClient
@@ -45,7 +45,7 @@ Use the NotionTemplate component to render blocks on the screen.
 ### ReactJS Example
 ```jsx
 import { useState, useEffect } from "react";
-import NotionTemplate from '@hibernationit/notion2component/dist/NotionTemplate'
+import NotionTemplate from 'notion2nextjs/dist/NotionTemplate'
 
 export default function Page() {
   const [data, setData] = useState([])
@@ -64,7 +64,7 @@ export default function Page() {
 ```jsx
 // page.jsx
 import { Client } from "@notionhq/client";
-import NotionTemplate from '@hibernationit/notion2component/dist/NotionTemplate'
+import NotionTemplate from 'notion2nextjs/dist/NotionTemplate'
 import { Notion2Component } from "./notion2Component";
 
 async function getData() {
@@ -88,7 +88,7 @@ export default async function Page() {
 // csrComponent.jsx
 'use client'
 
-import NotionTemplate from '@hibernationit/notion2component/dist/NotionTemplate'
+import NotionTemplate from 'notion2nextjs/dist/NotionTemplate'
 
 export default function CsrComponent({data}) {
   return <NotionTemplate blocks={data} />
