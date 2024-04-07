@@ -11,7 +11,7 @@
   "author": "atknatk@gmail.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HibernationIT/notion2component.git"
+    "url": "https://github.com/atknatk/notion2nextjs.git"
   },
   "private": false,
   "main": "dist/index.js",
